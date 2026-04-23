@@ -84,3 +84,14 @@ Publish directory:
 ```text
 dist
 ```
+
+## GitHub Pages Auto Deploy
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml`.
+
+- Every push to `main` automatically builds and deploys the latest site to GitHub Pages.
+- You can also run it manually from the **Actions** tab using **workflow_dispatch**.
+
+For this to work, repository Pages settings should use:
+
+- **Source**: GitHub Actions
